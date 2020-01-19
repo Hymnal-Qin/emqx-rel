@@ -57,7 +57,7 @@ build:
 	@cd ../.. \
 	&& docker build --no-cache \
 		--build-arg EMQX_DEPS_DEFAULT_VSN=$(EMQX_DEPS_DEFAULT_VSN) \
-		--build-arg BUILD_FROM=$(ARCH)/erlang:22.1-alpine  \
+		--build-arg BUILD_FROM=$(ARCH)/erlang:22.2-alpine  \
 		--build-arg RUN_FROM=$(ARCH)/alpine:3.10 \
 		--build-arg EMQX_NAME=$(EMQX_NAME) \
 		--build-arg QEMU_ARCH=$(QEMU_ARCH) \

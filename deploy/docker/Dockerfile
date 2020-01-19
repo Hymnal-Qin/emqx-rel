@@ -1,4 +1,4 @@
-ARG BUILD_FROM=erlang:22.1-alpine 
+ARG BUILD_FROM=erlang:22.2-alpine
 ARG RUN_FROM=alpine:3.10
 FROM ${BUILD_FROM} AS builder
 
